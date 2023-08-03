@@ -1,5 +1,5 @@
 <?php
 
-echo "teste observer.ativo.com"
+echo "teste observer.ativo.com";
 
 ?>
