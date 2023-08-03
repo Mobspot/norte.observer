@@ -23,6 +23,6 @@ jobs:
                 script: |
                   cd ~/www.norte.observer.com.br
                   git pull
-                  sudo cp ~/www.norte.observer.com.br/deploy_from_pipe.sh ~/deploy_observer.sh
+                  sudo cp ~/norte.observer.com.br/deploy_from_pipe.sh ~/deploy_observer.sh
                   sudo chmod +x ~/deploy_observer.sh
                   bash ~/deploy_observer.sh
