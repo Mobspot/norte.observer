@@ -1,4 +1,4 @@
-name: borafitness-oracle
+name: observer-oracle
 on: [push]
 jobs:
     deploy_to_oracle:
@@ -21,8 +21,8 @@ jobs:
                 key: ${{ secrets.SSH_PRIVATE_KEY }}
                 port: 22
                 script: |
-                  cd ~/www.borafitness.com.br
+                  cd ~/www.norte.observer.com.br
                   git pull
-                  sudo cp ~/www.borafitness.com.br/deploy_from_pipe.sh ~/deploy.sh
-                  sudo chmod +x ~/deploy.sh
-                  bash ~/deploy.sh
+                  sudo cp ~/www.norte.observer.com.br/deploy_from_pipe.sh ~/deploy_observer.sh
+                  sudo chmod +x ~/deploy_observer.sh
+                  bash ~/deploy_observer.sh
