@@ -3,8 +3,8 @@
 stagePath="/var/www/html/norte.observer.com.br"
 gitPath="/home/ubuntu/norte.observer.com.br"
 
-sudo rm -R $stagePath/*
-sudo cp -R $gitPath/* $stagePath/
+sudo rm -R /var/www/html/norte.observer.com.br
+sudo cp -R /home/ubuntu/norte.observer.com.br /var/www/html/
 
 # sudo cp $gitPath/observer.conf /etc/apache2/sites-available/observer.conf
 # sudo a2ensite /etc/apache2/sites-available/observer.conf
