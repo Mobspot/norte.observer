@@ -21,8 +21,8 @@ jobs:
                 key: ${{ secrets.SSH_PRIVATE_KEY }}
                 port: 22
                 script: |
-                  cd ~/norte.observer.com.br
+                  cd ~/observer.ativo.com
                   git pull
-                  sudo cp ~/norte.observer.com.br/deploy_from_pipe.sh ~/deploy_observer.sh
+                  sudo cp ~/observer.ativo.com/deploy_from_pipe.sh ~/deploy_observer.sh
                   sudo chmod +x ~/deploy_observer.sh
                   bash ~/deploy_observer.sh
